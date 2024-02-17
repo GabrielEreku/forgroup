@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Field</title>
+</head>
+<body>
+    <center>
+        //GABRIEL START 
+    <!-- The canvas element where the football field will be drawn -->
+    <canvas id="footballField" width="1000" height="500"></canvas>
+
+    <script>
+        // Wait for the DOM content to be fully loaded before executing the script
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the canvas element and its 2D rendering context
+            var canvas = document.getElementById('footballField');
+            var ctx = canvas.getContext('2d');
+
+            // Draw green background for the football field
+            ctx.fillStyle = '#4CAF50'; // Green color
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            //GABRIEL END
+
+        });
+    </script>
+    </center>
+</body>
+</html>
